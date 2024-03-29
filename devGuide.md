@@ -1,27 +1,21 @@
-<style>
-  h1{padding-top:24px}
-  h2{display:inline-block;margin-bottom:0px;}
-  h2.namespace{margin-bottom:4px;margin-top:18px;color:#6ADF60;border-bottom: 1px solid;}
-  h4{ color: #DF6060 }
-  a{color:inherit; text-decoration: none;}
-</style>
-
-<h2 style="margin-bottom:10px;color:#fff;border: none; ">Tech Team Guide - BMW x ScadPro Spring 2024 </h2>
+<h1 style="margin-bottom:10px;color:#fff;border: none; ">Tech Team Guide - BMW x ScadPro Spring 2024 </h1>
 
 ---
+<br/>
 <br/>
 
 
 <!-- Unity - UnityEngine -->
 # Unity - UnityEngine (Package)
 <!-- UnityEngine.InputSystem -->
-<h2 class="namespace">Namespace: &lt;UnityEngine.InputSystem&gt;&nbsp;&nbsp;
+<h2 style="display:inline-block;color: #DF6060">Namespace: &lt;UnityEngine.InputSystem&gt;&nbsp;&nbsp;
     <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.html">📖</a></h2>
 
 <!-- Enum -->
-## Enum
+<h2 style="display:inline;color:#6ADF60;">Enum</h2>
+
 <!-- TouchPhase -->
-### `Enum TouchPhase` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.TouchPhase.html)
+### `TouchPhase` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.TouchPhase.html)
 > Indicates where in its lifecycle a given touch is.
 ```c#
 public enum TouchPhase
@@ -47,17 +41,19 @@ if (primaryTouchPhase == TouchPhase.Began)
 |Canceled|An ongoing touch has been cancelled.|4|
 |Stationary|An ongoing touch has not been moved (not received any input) in a frame.|5|
 #### Extension Methods
-InputExtensions.IsEndedOrCanceled() &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputExtensions.html#UnityEngine_InputSystem_InputExtensions_IsEndedOrCanceled_UnityEngine_InputSystem_TouchPhase_) <br>
+> InputExtensions.IsEndedOrCanceled() &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputExtensions.html#UnityEngine_InputSystem_InputExtensions_IsEndedOrCanceled_UnityEngine_InputSystem_TouchPhase_) <br>
 InputExtensions.IsActive() &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputExtensions.html#UnityEngine_InputSystem_InputExtensions_IsActive_UnityEngine_InputSystem_TouchPhase_)
 
----
-<h2 class="namespace">Namespace: UnityEngine.InputSystem.EnhancedTouch&nbsp;&nbsp;
-    <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.html">📖</a></h2>
+<br>
 
+---
+<h2 style="display:inline-block;color: #DF6060">Namespace: UnityEngine.InputSystem.EnhancedTouch&nbsp;&nbsp;
+    <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.html">📖</a></h2>
 <!-- Class -->
-## Class
+<h2 style="display:inline;color:#6ADF60;">Class</h2>
+
 <!-- Finger -->
-### `Class Finger` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.Finger.html)
+### `Finger` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.Finger.html)
 > A high-level representation of a touch which automatically keeps track of a touch over time.
 ```c#
 public class Finger
@@ -151,10 +147,15 @@ touchHistory
 /* Note: For each property, detailed comments include its declaration, property value or type, remarks where applicable, and a general meaning or usage indication. These comments aim to give a clear and comprehensive understanding of each property's role in managing touch inputs through finger instances in Unity's Enhanced Touch System. */
 
 ```
+<br>
+
+---
+<br>
 <!-- Struct -->
-## Struct
+<h2 style="display:inline;color:#6ADF60;">Struct</h2>
+
 <!-- TouchPhase -->
-### `Enum TouchPhase` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.Touch.html)
+### `TouchPhase` &nbsp;&nbsp;[📖](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.EnhancedTouch.Touch.html)
 > A high-level representation of a touch which automatically keeps track of a touch over time.
 ```c#
 public struct Touch : IEquatable<Touch>
